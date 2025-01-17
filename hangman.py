@@ -21,15 +21,19 @@ titleFont = pygame.font.SysFont('comicsans', 100)
 
 background = pygame.image.load('background.jpg')
 background = pygame.transform.scale(background, (width, height))
+hintIcon = pygame.image.load('hint.png')  
+hintIcon = pygame.transform.scale(hintIcon, (50, 50))
 
 def loadWords(filename):
     try:
         with open(filename, 'r') as file:
-            words = [
-                line.strip().upper()
-                for line in file
-                if line.strip().isalpha() and all('A' <= char <= 'Z' for char in line.strip().upper())
-            ]
+            words = []
+            for line in file:
+                parts = line.strip().split(",")
+                if len(parts) == 2 and parts[0].isalpha() and all('A' <= char <= 'Z' for char in parts[0].upper()):
+                    words.append((parts[0].upper(), parts[1]))
+                elif len(parts) == 1 and parts[0].isalpha():
+                    words.append((parts[0].upper(), None)) 
         if not words:
             raise ValueError("Words file is empty or contains invalid entries.")
         return words
@@ -37,7 +41,6 @@ def loadWords(filename):
         print(e)
         pygame.quit()
         exit()
-
 
 def generateLetters(startX, startY, radius, gap):
     letters = []
@@ -78,17 +81,28 @@ def displayMessage(screen, message, color):
     pygame.display.update()
     pygame.time.delay(2000)
 
+def drawHint(screen, hint):
+    hintText = letterFont.render(f"Hint: {hint}", 1, red)
+    screen.blit(hintText, (width / 2 - hintText.get_width() / 2, height - 100))
+
+def drawHintIcon(screen, x, y):
+    screen.blit(hintIcon, (x, y))
+
 def playGame():
     screen = pygame.display.set_mode((width, height))
     pygame.display.set_caption("Hangman Game")
     hearts = 6
     hangmanStatus = 0
     guessed = []
+    hintUsed = False
+
     words = loadWords("words.txt")
-    word = random.choice(words)
+    word, hint = random.choice(words)
     letters = generateLetters(startX, startY, radius, gap)
     clock = pygame.time.Clock()
     run = True
+
+    hintX, hintY = width - 100, height - 100 
 
     while run:
         clock.tick(fps)
@@ -97,6 +111,10 @@ def playGame():
         drawWord(screen, word, guessed)
         drawLetters(screen, letters)
         drawHearts(screen, hearts, hangmanStatus)
+        if hint and not hintUsed:  
+            drawHintIcon(screen, hintX, hintY)
+        if hintUsed and hint:
+            drawHint(screen, hint)
         pygame.display.update()
 
         for event in pygame.event.get():
@@ -111,6 +129,8 @@ def playGame():
                         guessed.append(ltr)
                         if ltr not in word:
                             hangmanStatus += 1
+                if hint and not hintUsed and hintX <= mouseX <= hintX + 50 and hintY <= mouseY <= hintY + 50:
+                    hintUsed = True
 
         won = all([letter in guessed for letter in word])
         if won:

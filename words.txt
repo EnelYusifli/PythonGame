@@ -1,110 +1,97 @@
-Python
-Developer
-Hangman
-Programming
-Computer
-Charles
-Prague
-Acrobat
-Algorithm
-Bicycle
-Chocolate
-Elephant
-Umbrella
-Volcano
-Paradox
-Quarantine
-Symphony
-Luggage
-Laptop
-Frequency
-Harvest
-Adventure
-Pyramid
-Galaxy
-Mercury
-Infinity
-Universe
-Squirrel
-Balloon
-Combustion
-Dynasty
-Philosophy
-Imagine
-Whisper
-Guitar
-Journey
-Serenade
-Rainbow
-Texture
-Horizon
-Velocity
-Mystery
-Wanderlust
-Magnet
-Compass
-Obstacle
-Memory
-Dynasty
-Kettle
-Frostbite
-Raven
-Submarine
-Momentum
-Tapestry
-Galaxy
-Chemistry
-Monarchy
-Atmosphere
-Fabric
-Silence
-Universe
-Pandemic
-Prism
-Lantern
-Orbit
-Symphony
-Compass
-Lantern
-Radiance
-Serenity
-Fortune
-Midnight
-Breeze
-Harmony
-Echo
-Signal
-Horizon
-Jetstream
-Starlight
-Moonlight
-Contrast
-Puzzle
-Cactus
-Bridge
-Reflection
-Ember
-Journey
-Spectrum
-Bubble
-Tidal
-Lattice
-Blossom
-Solitude
-Helix
-Coral
-Aquatic
-Identity
-Legend
-Pixel
-Satellite
-Lantern
-Fortress
-Whisper
-Radiant
-Cascade
-Tranquil
-Phantom
-Ağayeva
-Əliyeva
-Enel
+ELEPHANT,Animal
+ALBERT,Name
+BANANA,Fruit
+PYTHON,Programming Language
+EVEREST,Mountain
+TOKYO,City
+SHARK,Sea Creature
+GUITAR,Musical Instrument
+COFFEE,Beverage
+TESLA,Company
+MOZART,Composer
+BASKETBALL,Sport
+SATURN,Planet
+CHESS,Board Game
+PYRAMID,Structure
+TULIP,Flower
+RUBY,Gemstone
+EINSTEIN,Scientist
+CAMEL,Animal
+GIRAFFE,Animal
+SAHARA,Desert
+TITANIC,Ship
+VOLCANO,Natural Phenomenon
+SPAGHETTI,Food
+NIAGARA,Falls
+JUPITER,Planet
+DRACULA,Fictional Character
+PUMPKIN,Vegetable
+CARNIVAL,Festival
+KANGAROO,Animal
+ALASKA,State
+MONALISA,Painting
+VIOLIN,Musical Instrument
+CHEETAH,Animal
+SUSHI,Food
+PELICAN,Bird
+OPERA,Art Form
+VENUS,Planet
+WALNUT,Nut
+IGLOO,Shelter
+PLUTO,Dwarf Planet
+ORCHESTRA,Music Ensemble
+MUSHROOM,Fungus
+ATLANTIC,Ocean
+RACCOON,Animal
+AURORA,Natural Phenomenon
+CITRUS,Fruit Family
+DINOSAUR,Extinct Creature
+TOUCAN,Bird
+SNOWFLAKE,Weather Phenomenon
+FERRARI,Car Brand
+CUPCAKE,Dessert
+HIMALAYAS,Mountain Range
+MUSTANG,Car Model
+FLAMINGO,Bird
+TRIANGLE,Shape
+ORANGE,Fruit
+ZEBRA,Animal
+HORIZON,Natural Feature
+MOON,Satellite
+COWBOY,Profession
+DIAMOND,Gemstone
+KOALA,Animal
+FIREWORKS,Festival Symbol
+MONKEY,Animal
+MERMAID,Mythical Creature
+CAROUSEL,Fairground Ride
+EAGLE,Bird
+LOLLIPOP,Candy
+PRAGUE,City
+SAVANNAH,Landscape
+PEACOCK,Bird
+BUTTERFLY,Insect
+PHARAOH,Historical Figure
+PLATYPUS,Animal
+STRAWBERRY,Fruit
+CROCODILE,Reptile
+ATLANTIS,Mythical City
+ROSE,Flower
+TURTLE,Animal
+CARNATION,Flower
+MOTORBIKE,Vehicle
+CLOUD,Weather Phenomenon
+WINDMILL,Structure
+JAGUAR,Animal
+LANTERN,Light Source
+BULLET,Projectile
+GOLDENROD,Flower
+CANDLE,Light Source
+PENGUIN,Bird
+ROBIN,Bird
+EARTH,Planet
+NEBULA,Space Phenomenon
+COMET,Space Phenomenon
+VULTURE,Bird
+BALLET,Dance Form
+TELESCOPE,Instrument
